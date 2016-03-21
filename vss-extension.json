@@ -1,0 +1,83 @@
+{
+    "manifestVersion": 1,
+    
+    "publisher": "cschleiden",
+    "id": "vsts-progress",
+    "version": "0.1.0",    
+    "public": false,
+    
+    "name": "Progress Indicator",
+    "description": "Display progress indicator on work item form for child work items.",
+    
+    "scopes": [ "vso.work" ],
+    
+    "icons": {
+        "default": "img/logo.png"
+    },
+    
+    "targets": [{
+        "id": "Microsoft.VisualStudio.Services.Cloud"
+    }],   
+    
+    "files": [
+        {
+            "path": "img",
+            "addressable": true
+        },
+        {
+            "path": "css",
+            "addressable": true
+        },        
+        {
+            "path": "scripts",
+            "addressable": true
+        },
+        {
+            "path": "index.html",
+            "addressable": true
+        },
+        {
+            "path": "bower_components/circles/circles.min.js",
+            "addressable": true
+        }
+    ],
+    
+    "contributions": [
+        {
+            "id": "progress-form-group",
+            "type": "ms.vss-work-web.work-item-form-group",
+            
+            "targets": [
+                "ms.vss-work-web.work-item-form"
+            ],
+            
+            "properties": {
+                "name": "Progress",
+                "uri": "index.html",
+                "height": 200
+            }
+        }
+    ],
+    
+    
+    "tags": [
+        "Sample"
+    ],
+    "categories": [
+        "Integrate"
+    ],
+    "content": {
+        "details": {
+            "path": "details.md"
+        }
+    },
+    "links": {
+        "support": {
+            "uri": "mailto:cschleid@microsoft.com"
+        }
+    },
+    "branding": {
+        "color": "rgb(220, 235, 252)",
+        "theme": "light"
+    }
+}

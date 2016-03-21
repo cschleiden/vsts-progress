@@ -1,0 +1,9 @@
+#progress {
+    text-align: center;
+    padding: 10px;
+}
+
+.circles-text {
+    font-size: 24px !important;
+    font-weight: bold;
+}
