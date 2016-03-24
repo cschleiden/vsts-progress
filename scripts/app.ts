@@ -102,7 +102,7 @@ class ProgressIndicator {
             maxValue: value,
             value: maxValue,
             colors: ['#BEE3F7', '#45AEEA'],
-            text: function () { return Math.floor(this.getPercent()).toString(10) + "%"; },
+            text: () => `${value} / ${maxValue}`,
             duration: 400,
             radius: 80,
             width: 40       
