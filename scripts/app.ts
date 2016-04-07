@@ -32,7 +32,7 @@ function calculateCompletion() {
                             .length;
 
                         // Update progress bar
-                        ProgressIndicator.show(numberOfCompletedItems, numberOfItems);
+                        ProgressIndicator.show(numberOfItems, numberOfCompletedItems);
                     });
             });
         });
@@ -99,8 +99,8 @@ class ProgressIndicator {
         // Use 3rd party library to create progress indicator        
         let circle = (Circles).create({
             id: 'progress',
-            maxValue: value,
-            value: maxValue,
+            maxValue: maxValue,
+            value: value,
             colors: ['#BEE3F7', '#45AEEA'],
             text: () => `${value} / ${maxValue}`,
             duration: 400,
