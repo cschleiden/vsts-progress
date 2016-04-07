@@ -1,3 +1,3 @@
-# vsts-extension-ts-seed-simple #
+# vsts-progress #
 
 Describe your extension.
